@@ -6,11 +6,27 @@ fn main() {
         println!("Not proceeding");
     }
 
-    let height = 190;
-    if height < 180 {
+    let age = 22;
+    if age > 55 {
+        println!("OLD!");
+    } else if age > 20 { 
+        println!("Not old");
+    } else {
+        println!("Child")
+    }
+
+
+    let height = 173;
+    if height > 180 {
         println!("Tall");
-    } else if height > 170 {
-        println!("Average");
+    } else if height > 170{
+        // this a check using nested if-else statements
+        if age > 20{
+            println!("double average");
+        }else{
+            println!("Average");
+        }
+        
     } else {
         println!("Short");
     }
